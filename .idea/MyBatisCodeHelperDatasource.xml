@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="com.cst.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/coin-amin/admin-service/src/main/java" />
+        <option name="javaModelPackage" value="com.cst.domain" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/coin-amin/admin-service/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="admin-service" />
+        <option name="lombokAllArgConstructor" value="true" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="lombokNoArgsConstructor" value="true" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="admin-service">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.cst.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/coin-amin/admin-service/src/main/java" />
+                  <option name="javaModelPacakge" value="com.cst.domain" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/coin-amin/admin-service/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="com.cst.service" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/coin-amin/admin-service/src/main/java" />
+                  <option name="javaServicePackage" value="com.cst.service.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/coin-amin/admin-service/src/main/java" />
+                  <option name="xmlPackage" value="mappers" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/coin-amin/admin-service/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="mybatisPlusStaticField" value="false" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="coin-exchange:config">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Config" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_menu">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysMenu" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_privilege">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysPrivilege" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_role">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysRole" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_role_menu">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysRoleMenu" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_role_privilege">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysRolePrivilege" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_role_privilege_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysRolePrivilegeUser" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysUser" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_user_log">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="SysUserLog" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:sys_user_role">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysUserRole" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:web_config">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="WebConfig" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="coin-exchange:work_issue">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="WorkIssue" />
+                  <option name="moduleName" value="admin-service" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="useSwagger" value="true" />
+        <option name="userMybatisPlus" value="true" />
+        <option name="xmlMapperPackage" value="mappers" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/coin-amin/admin-service/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

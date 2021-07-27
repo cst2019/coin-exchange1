@@ -1,0 +1,13 @@
+[{
+  "resource": "admin-service_router",
+  "resourceMode": 0,
+  "intervalSec": 60,
+  "count": 5
+},{
+  "resource": "admin-service-api",
+  "resourceMode": 1,
+  "intervalSec": 60,
+  "count": 1
+}
+
+]

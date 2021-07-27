@@ -1,0 +1,50 @@
+server:
+  port: 80
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://47.112.241.154:8848/
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true #忽略大小写
+      routes:
+        - id: admin-service_router
+          uri: lb://admin-service  #转发到哪个目的地
+          predicates:
+            - Path=/admin/**
+        - id: test_router
+          uri: http://www.baidu.com/  #转发到哪个目的地
+          predicates:
+            - Path=/test
+        - id: test_router1
+          uri: http://www.aliyun.com
+          predicates:
+            - Path=/product
+    #两种维度，网关维度+api维度的限流
+    sentinel:
+      transport:
+        dashboard: 47.112.241.154:8858
+      datasource:
+#        ds1.file:
+#          file: classpath:gw-flow.json #网关+api 分组的限流
+#          ruleType: gw_flow
+#        ds2.file:
+#            file: classpath:api-group.json
+#            ruleType: gw_api_group
+        ds1.nacos: #com.alibaba.csp.sentinel.datasource.nacos.NacosDataSource 使用Nacos持久化我的sentinel 数据时，需要添加nacos-datasource的依赖
+          serverAddr: http://47.112.241.154:8848
+          dataId: gw-flow
+          ruleType: gw_flow
+        ds2.nacos:
+            serverAddr: http://47.112.241.154:8848
+            dataId: api-group
+            ruleType: gw_api_group #
+  redis:
+    host: 120.53.107.39
+    port: 6380
+    password: cst1234
